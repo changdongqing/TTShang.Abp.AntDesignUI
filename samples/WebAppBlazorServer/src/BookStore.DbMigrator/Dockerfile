@@ -1,5 +1,5 @@
 FROM mcr.microsoft.com/dotnet/aspnet:9.0
-COPY bin/Release/net9.0/publish/ app/
+COPY bin/Release/net10.0/publish/ app/
 WORKDIR /app
 ENV ASPNETCORE_URLS=http://+:80
 ENTRYPOINT ["dotnet", "BookStore.DbMigrator.dll"]
