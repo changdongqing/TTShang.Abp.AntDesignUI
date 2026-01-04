@@ -1,12 +1,12 @@
 <Project>
 	<PropertyGroup>
-		<VoloAbpPackageVersion>9.2.1</VoloAbpPackageVersion>
-		<VoloAbpLeptonxPackageVersion>4.2.0</VoloAbpLeptonxPackageVersion>
-		<VoloAbpStudioPackageVersion>1.0.1</VoloAbpStudioPackageVersion>
-		<AntPackageVersion>1.4.2</AntPackageVersion>
-		<MicrosoftExtensionsPackageVersion>9.0.6</MicrosoftExtensionsPackageVersion>
-		<MicrosoftAspNetCorePackageVersion>9.0.6</MicrosoftAspNetCorePackageVersion>
-		<MicrosoftEntityFrameworkCorePackageVersion>9.0.6</MicrosoftEntityFrameworkCorePackageVersion>
+		<VoloAbpPackageVersion>10.0.0</VoloAbpPackageVersion>
+		<VoloAbpLeptonxPackageVersion>5.0.0</VoloAbpLeptonxPackageVersion>
+		<VoloAbpStudioPackageVersion>2.1.4</VoloAbpStudioPackageVersion>
+		<AntPackageVersion>1.5.1</AntPackageVersion>
+		<MicrosoftExtensionsPackageVersion>10.0.0</MicrosoftExtensionsPackageVersion>
+		<MicrosoftAspNetCorePackageVersion>10.0.0</MicrosoftAspNetCorePackageVersion>
+		<MicrosoftEntityFrameworkCorePackageVersion>10.0.0</MicrosoftEntityFrameworkCorePackageVersion>
 		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
 	</PropertyGroup>
 	<!-- Abp Framework -->
@@ -134,6 +134,7 @@
 		<PackageVersion Include="Microsoft.Extensions.Http.Polly" Version="$(MicrosoftExtensionsPackageVersion)" />
 		<PackageVersion Include="Microsoft.Extensions.Hosting" Version="$(MicrosoftExtensionsPackageVersion)" />
 		<PackageVersion Include="Microsoft.Extensions.FileProviders.Embedded" Version="$(MicrosoftExtensionsPackageVersion)" />
+		<PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
 	</ItemGroup>
 	<!-- Serilog -->
 	<ItemGroup>

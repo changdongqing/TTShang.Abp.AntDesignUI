@@ -1,3 +1,4 @@
 {
-  "role": "host.blazor-server"
+  "role": "host.blazor-server",
+  "projectId": "2e829603-5372-430d-b7c5-d7ca5260a064"
 }
