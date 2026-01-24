@@ -10,7 +10,7 @@ using Lsw.Abp.AspnetCore.Components.Web.AntDesignTheme.Routing;
 using OpenIddict.Abstractions;
 using Volo.Abp.AspNetCore.Components.Web;
 using Volo.Abp.Autofac.WebAssembly;
-using Volo.Abp.AutoMapper;
+using Volo.Abp.Mapperly;
 using Volo.Abp.Modularity;
 using Volo.Abp.UI.Navigation;
 using Lsw.Abp.AspnetCore.Components.WebAssembly.AntDesignTheme;
@@ -34,6 +34,7 @@ namespace BookStore.Blazor.Client;
     typeof(AbpTenantManagementBlazorWebAssemblyAntDesignModule),
     typeof(AbpAspNetCoreComponentsWebAssemblyAntDesignThemeModule),
     typeof(AbpAutofacWebAssemblyModule),
+    typeof(AbpMapperlyModule),
     typeof(BookStoreHttpApiClientModule)
 )]
 public class BookStoreBlazorClientModule : AbpModule
@@ -56,7 +57,7 @@ public class BookStoreBlazorClientModule : AbpModule
         //ConfigureBlazorise(context);
         ConfigureRouter(context);
         ConfigureMenu(context);
-        ConfigureAutoMapper(context);
+        ConfigureMapperly(context);
     }
 
 
@@ -97,11 +98,8 @@ public class BookStoreBlazorClientModule : AbpModule
         });
     }
 
-    private void ConfigureAutoMapper(ServiceConfigurationContext context)
+    private void ConfigureMapperly(ServiceConfigurationContext context)
     {
-        Configure<AbpAutoMapperOptions>(options =>
-        {
-            options.AddMaps<BookStoreBlazorClientModule>();
-        });
+        context.Services.AddMapperlyObjectMapper<BookStoreBlazorClientModule>();
     }
 }

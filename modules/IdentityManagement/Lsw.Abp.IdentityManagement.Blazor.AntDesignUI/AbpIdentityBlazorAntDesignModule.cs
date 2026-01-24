@@ -3,8 +3,8 @@ using Lsw.Abp.AspnetCore.Components.Web.AntDesignTheme;
 using Lsw.Abp.AspnetCore.Components.Web.AntDesignTheme.Routing;
 using Lsw.Abp.PermissionManagement.Blazor.AntDesignUI;
 using Microsoft.Extensions.DependencyInjection;
-using Volo.Abp.AutoMapper;
 using Volo.Abp.Identity;
+using Volo.Abp.Mapperly;
 using Volo.Abp.Modularity;
 using Volo.Abp.ObjectExtending;
 using Volo.Abp.ObjectExtending.Modularity;
@@ -15,7 +15,7 @@ namespace Lsw.Abp.IdentityManagement.Blazor.AntDesignUI;
 
 [DependsOn(
     typeof(AbpIdentityApplicationContractsModule),
-    typeof(AbpAutoMapperModule),
+    typeof(AbpMapperlyModule),
     typeof(AbpPermissionManagementBlazorAntDesignModule),
     typeof(AbpAspNetCoreComponentsWebAntDesignThemeModule),
     typeof(AbpAntDesignUIModule)
@@ -26,12 +26,7 @@ public class AbpIdentityBlazorAntDesignModule: AbpModule
 
     public override void ConfigureServices(ServiceConfigurationContext context)
     {
-        context.Services.AddAutoMapperObjectMapper<AbpIdentityBlazorAntDesignModule>();
-
-        Configure<AbpAutoMapperOptions>(options =>
-        {
-            options.AddProfile<AbpIdentityBlazorAntDesignAutoMapperProfile>(validate: true);
-        });
+        context.Services.AddMapperlyObjectMapper<AbpIdentityBlazorAntDesignModule>();
 
         Configure<AbpNavigationOptions>(options =>
         {

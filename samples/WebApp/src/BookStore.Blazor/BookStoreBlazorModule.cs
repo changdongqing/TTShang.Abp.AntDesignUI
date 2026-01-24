@@ -30,12 +30,12 @@ using Volo.Abp.AspNetCore.Mvc.UI.Bundling;
 using Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared;
 using Volo.Abp.AspNetCore.Serilog;
 using Volo.Abp.Autofac;
-using Volo.Abp.AutoMapper;
 using Volo.Abp.Security.Claims;
 using Volo.Abp.AspNetCore.Mvc.UI.Theme.LeptonXLite;
 using Volo.Abp.AspNetCore.Mvc.UI.Theme.LeptonXLite.Bundling;
 using Lsw.Abp.AspnetCore.Components.WebAssembly.AntDesignTheme.Bundling;
 using Volo.Abp.Localization;
+using Volo.Abp.Mapperly;
 using Volo.Abp.Modularity;
 using Volo.Abp.Swashbuckle;
 using Volo.Abp.UI.Navigation;
@@ -63,7 +63,8 @@ namespace BookStore.Blazor;
     // typeof(AbpAspNetCoreComponentsWebAssemblyLeptonXLiteThemeBundlingModule),
     typeof(AbpAspNetCoreComponentsWebAssemblyAntDesignThemeBundlingModule),
     typeof(AbpAspNetCoreMvcUiLeptonXLiteThemeModule),
-    typeof(AbpAspNetCoreSerilogModule)
+    typeof(AbpAspNetCoreSerilogModule),
+    typeof(AbpMapperlyModule)
    )]
 public class BookStoreBlazorModule : AbpModule
 {
@@ -141,7 +142,7 @@ public class BookStoreBlazorModule : AbpModule
         ConfigureAuthentication(context);
         ConfigureUrls(configuration);
         ConfigureBundles();
-        ConfigureAutoMapper();
+        ConfigureMapperly(context);
         ConfigureVirtualFileSystem(hostingEnvironment);
         ConfigureSwaggerServices(context.Services);
         ConfigureAutoApiControllers();
@@ -273,12 +274,9 @@ public class BookStoreBlazorModule : AbpModule
         });
     }
 
-    private void ConfigureAutoMapper()
+    private void ConfigureMapperly(ServiceConfigurationContext context)
     {
-        Configure<AbpAutoMapperOptions>(options =>
-        {
-            options.AddMaps<BookStoreBlazorModule>();
-        });
+        context.Services.AddMapperlyObjectMapper<BookStoreBlazorModule>();
     }
 
     public override void OnApplicationInitialization(ApplicationInitializationContext context)
