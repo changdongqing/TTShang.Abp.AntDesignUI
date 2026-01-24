@@ -26,7 +26,7 @@
 		<PackageVersion Include="Volo.Abp.Authorization" Version="$(VoloAbpPackageVersion)" />
 		<PackageVersion Include="Volo.Abp.Autofac" Version="$(VoloAbpPackageVersion)" />
 		<PackageVersion Include="Volo.Abp.Autofac.WebAssembly" Version="$(VoloAbpPackageVersion)" />
-		<PackageVersion Include="Volo.Abp.AutoMapper" Version="$(VoloAbpPackageVersion)" />
+		<PackageVersion Include="Volo.Abp.Mapperly" Version="$(VoloAbpPackageVersion)" />
 		<PackageVersion Include="Volo.Abp.BackgroundJobs.Abstractions" Version="$(VoloAbpPackageVersion)" />
 		<PackageVersion Include="Volo.Abp.BackgroundJobs.Domain.Shared" Version="$(VoloAbpPackageVersion)" />
 		<PackageVersion Include="Volo.Abp.BackgroundJobs.EntityFrameworkCore" Version="$(VoloAbpPackageVersion)" />

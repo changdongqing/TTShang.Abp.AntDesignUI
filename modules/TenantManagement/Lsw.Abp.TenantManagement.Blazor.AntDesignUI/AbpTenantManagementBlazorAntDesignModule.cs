@@ -1,7 +1,7 @@
 ﻿using Lsw.Abp.AspnetCore.Components.Web.AntDesignTheme.Routing;
 using Lsw.Abp.FeatureManagement.Blazor.AntDesignUI;
 using Microsoft.Extensions.DependencyInjection;
-using Volo.Abp.AutoMapper;
+using Volo.Abp.Mapperly;
 using Volo.Abp.Modularity;
 using Volo.Abp.ObjectExtending;
 using Volo.Abp.ObjectExtending.Modularity;
@@ -13,7 +13,7 @@ namespace Lsw.Abp.TenantManagement.Blazor.AntDesignUI;
 
 
 [DependsOn(
-    typeof(AbpAutoMapperModule),
+    typeof(AbpMapperlyModule),
     typeof(AbpTenantManagementApplicationContractsModule),
     typeof(AbpFeatureManagementBlazorAntDesignModule)
 )]
@@ -23,12 +23,7 @@ public class AbpTenantManagementBlazorAntDesignModule : AbpModule
 
     public override void ConfigureServices(ServiceConfigurationContext context)
     {
-        context.Services.AddAutoMapperObjectMapper<AbpTenantManagementBlazorAntDesignModule>();
-
-        Configure<AbpAutoMapperOptions>(options =>
-        {
-            options.AddProfile<AbpTenantManagementBlazorAutoMapperProfile>(validate: true);
-        });
+        context.Services.AddMapperlyObjectMapper<AbpTenantManagementBlazorAntDesignModule>();
 
         Configure<AbpNavigationOptions>(options =>
         {
