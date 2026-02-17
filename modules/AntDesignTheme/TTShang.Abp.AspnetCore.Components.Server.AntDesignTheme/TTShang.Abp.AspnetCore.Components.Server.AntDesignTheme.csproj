@@ -18,5 +18,11 @@
     <ItemGroup>
       <ProjectReference Include="..\TTShang.Abp.AspnetCore.Components.Web.AntDesignTheme\TTShang.Abp.AspnetCore.Components.Web.AntDesignTheme.csproj" />
     </ItemGroup>
+    
+    <ItemGroup>
+      <PackageReference Update="Fody">
+        <PrivateAssets>all</PrivateAssets>
+      </PackageReference>
+    </ItemGroup>
 
 </Project>
