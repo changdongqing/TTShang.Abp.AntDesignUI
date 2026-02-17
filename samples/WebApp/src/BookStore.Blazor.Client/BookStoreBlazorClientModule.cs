@@ -6,18 +6,18 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using BookStore.Blazor.Client.Navigation;
-using Lsw.Abp.AspnetCore.Components.Web.AntDesignTheme.Routing;
+using TTShang.Abp.AspnetCore.Components.Web.AntDesignTheme.Routing;
 using OpenIddict.Abstractions;
 using Volo.Abp.AspNetCore.Components.Web;
 using Volo.Abp.Autofac.WebAssembly;
 using Volo.Abp.Mapperly;
 using Volo.Abp.Modularity;
 using Volo.Abp.UI.Navigation;
-using Lsw.Abp.AspnetCore.Components.WebAssembly.AntDesignTheme;
-using Lsw.Abp.FeatureManagement.Blazor.WebAssembly.AntDesignUI;
-using Lsw.Abp.SettingManagement.Blazor.WebAssembly.AntDesignUI;
-using Lsw.Abp.TenantManagement.Blazor.WebAssembly.AntDesignUI;
-using Lsw.Abp.IdentityManagement.Blazor.WebAssembly.AntDesignUI;
+using TTShang.Abp.AspnetCore.Components.WebAssembly.AntDesignTheme;
+using TTShang.Abp.FeatureManagement.Blazor.WebAssembly.AntDesignUI;
+using TTShang.Abp.SettingManagement.Blazor.WebAssembly.AntDesignUI;
+using TTShang.Abp.TenantManagement.Blazor.WebAssembly.AntDesignUI;
+using TTShang.Abp.IdentityManagement.Blazor.WebAssembly.AntDesignUI;
 
 
 namespace BookStore.Blazor.Client;

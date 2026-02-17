@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\modules\AntDesignTheme\Lsw.Abp.AspnetCore.Components.WebAssembly.AntDesignTheme.Bundling\Lsw.Abp.AspnetCore.Components.WebAssembly.AntDesignTheme.Bundling.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\AntDesignTheme\TTShang.Abp.AspnetCore.Components.WebAssembly.AntDesignTheme.Bundling\TTShang.Abp.AspnetCore.Components.WebAssembly.AntDesignTheme.Bundling.csproj" />
   </ItemGroup>
 
 </Project>

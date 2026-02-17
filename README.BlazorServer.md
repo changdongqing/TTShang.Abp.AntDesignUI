@@ -6,11 +6,11 @@ The first step is to use ABP CLI to create a new project.
 
 **Replace LeptonXLiteTheme with AntBlazorTheme packages**
 
-* Replace `Volo.Abp.AspNetCore.Components.Server.LeptonXLiteTheme` with `Lsw.Abp.AspnetCore.Components.Server.AntDesignTheme`
-* Replace `Volo.Abp.Identity.Blazor.Server` with `Lsw.Abp.IdentityManagement.Blazor.Server.AntDesignUI`
-* Replace `Volo.Abp.SettingManagement.Blazor.Server` with `Lsw.Abp.SettingManagement.Blazor.Server.AntDesignUI`
-* Replace `Volo.Abp.TenantManagement.Blazor.Server` with `Lsw.Abp.TenantManagement.Blazor.Server.AntDesignUI`
-* Replace `Volo.Abp.FeatureManagement.Blazor.Server` with `Lsw.Abp.FeatureManagement.Blazor.Server.AntDesignUI`
+* Replace `Volo.Abp.AspNetCore.Components.Server.LeptonXLiteTheme` with `TTShang.Abp.AspnetCore.Components.Server.AntDesignTheme`
+* Replace `Volo.Abp.Identity.Blazor.Server` with `TTShang.Abp.IdentityManagement.Blazor.Server.AntDesignUI`
+* Replace `Volo.Abp.SettingManagement.Blazor.Server` with `TTShang.Abp.SettingManagement.Blazor.Server.AntDesignUI`
+* Replace `Volo.Abp.TenantManagement.Blazor.Server` with `TTShang.Abp.TenantManagement.Blazor.Server.AntDesignUI`
+* Replace `Volo.Abp.FeatureManagement.Blazor.Server` with `TTShang.Abp.FeatureManagement.Blazor.Server.AntDesignUI`
 
 ```
 
@@ -18,10 +18,10 @@ The first step is to use ABP CLI to create a new project.
 
 ```csharp
 @using AntDesign
-@using Lsw.Abp.AntDesignUI
-@using Lsw.Abp.AntDesignUI.Components
-@using Lsw.Abp.AspnetCore.Components.Web.AntDesignTheme.Layout
-@using Lsw.Abp.AspnetCore.Components.Web.AntDesignTheme.Bundling
+@using TTShang.Abp.AntDesignUI
+@using TTShang.Abp.AntDesignUI.Components
+@using TTShang.Abp.AspnetCore.Components.Web.AntDesignTheme.Layout
+@using TTShang.Abp.AspnetCore.Components.Web.AntDesignTheme.Bundling
 ```
 
 **Open `BookStoreBlazorModule` make the following changes:**
@@ -65,8 +65,8 @@ The first step is to use ABP CLI to create a new project.
 **Open `Routes.razor` and replace with the following:**
 
 ```csharp
-@using Lsw.Abp.AspnetCore.Components.Web.AntDesignTheme.Routing
-@using Lsw.Abp.AspnetCore.Components.Web.AntDesignTheme.Themes.AntDesignTheme
+@using TTShang.Abp.AspnetCore.Components.Web.AntDesignTheme.Routing
+@using TTShang.Abp.AspnetCore.Components.Web.AntDesignTheme.Themes.AntDesignTheme
 @using Microsoft.Extensions.Options
 @inject IOptions<AbpRouterOptions> RouterOptions
 
