@@ -7,9 +7,9 @@ using BookStore.MultiTenancy;
 using Volo.Abp.Account.Localization;
 using Volo.Abp.UI.Navigation;
 using Localization.Resources.AbpUi;
-using Lsw.Abp.IdentityManagement.Blazor.AntDesignUI;
-using Lsw.Abp.SettingManagement.Blazor.AntDesignUI;
-using Lsw.Abp.TenantManagement.Blazor.AntDesignUI;
+using TTShang.Abp.IdentityManagement.Blazor.AntDesignUI;
+using TTShang.Abp.SettingManagement.Blazor.AntDesignUI;
+using TTShang.Abp.TenantManagement.Blazor.AntDesignUI;
 using Volo.Abp.Authorization.Permissions;
 using Volo.Abp.Users;
 

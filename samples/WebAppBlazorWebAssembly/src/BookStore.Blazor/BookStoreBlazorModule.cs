@@ -1,6 +1,6 @@
 using BookStore.Blazor.Components;
 using BookStore.Blazor.Client;
-using Lsw.Abp.AspnetCore.Components.WebAssembly.AntDesignTheme.Bundling;
+using TTShang.Abp.AspnetCore.Components.WebAssembly.AntDesignTheme.Bundling;
 using Volo.Abp;
 using Volo.Abp.AspNetCore.Components.WebAssembly.WebApp;
 using Volo.Abp.AspNetCore.Mvc.UI.Bundling;

@@ -30,15 +30,15 @@
     <PackageReference Include="Volo.Abp.AspNetCore.Serilog" />
     <PackageReference Include="Volo.Abp.Account.Web.OpenIddict" />
 
-    <ProjectReference Include="..\..\..\..\modules\IdentityManagement\Lsw.Abp.IdentityManagement.Blazor.Server.AntDesignUI\Lsw.Abp.IdentityManagement.Blazor.Server.AntDesignUI.csproj" />
-    <ProjectReference Include="..\..\..\..\modules\SettingManagement\Lsw.Abp.SettingManagement.Blazor.Server.AntDesignUI\Lsw.Abp.SettingManagement.Blazor.Server.AntDesignUI.csproj" />
-    <ProjectReference Include="..\..\..\..\modules\TenantManagement\Lsw.Abp.TenantManagement.Blazor.Server.AntDesignUI\Lsw.Abp.TenantManagement.Blazor.Server.AntDesignUI.csproj" />
-    <ProjectReference Include="..\..\..\..\modules\FeatureManagement\Lsw.Abp.FeatureManagement.Blazor.Server.AntDesignUI\Lsw.Abp.FeatureManagement.Blazor.Server.AntDesignUI.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\IdentityManagement\TTShang.Abp.IdentityManagement.Blazor.Server.AntDesignUI\TTShang.Abp.IdentityManagement.Blazor.Server.AntDesignUI.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\SettingManagement\TTShang.Abp.SettingManagement.Blazor.Server.AntDesignUI\TTShang.Abp.SettingManagement.Blazor.Server.AntDesignUI.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\TenantManagement\TTShang.Abp.TenantManagement.Blazor.Server.AntDesignUI\TTShang.Abp.TenantManagement.Blazor.Server.AntDesignUI.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\FeatureManagement\TTShang.Abp.FeatureManagement.Blazor.Server.AntDesignUI\TTShang.Abp.FeatureManagement.Blazor.Server.AntDesignUI.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.Theme.LeptonXLite" />
-    <ProjectReference Include="..\..\..\..\modules\AntDesignTheme\Lsw.Abp.AspnetCore.Components.Server.AntDesignTheme\Lsw.Abp.AspnetCore.Components.Server.AntDesignTheme.csproj" />
+    <ProjectReference Include="..\..\..\..\modules\AntDesignTheme\TTShang.Abp.AspnetCore.Components.Server.AntDesignTheme\TTShang.Abp.AspnetCore.Components.Server.AntDesignTheme.csproj" />
   </ItemGroup>
 
   <ItemGroup>
